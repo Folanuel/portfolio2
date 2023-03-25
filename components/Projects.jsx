@@ -56,7 +56,7 @@ const Projects = () => {
           />
 
           <ProjectItem
-            title='Netflix App Coming soon'
+            title='Netflix App'
             backgroundImg={netflixImg}
             projectUrl='/netflix'
             tech='React JS'

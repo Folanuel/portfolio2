@@ -36,14 +36,14 @@ const netflix = () => {
             management.
           </p>
           <a
-            href=''
+            href='https://github.com/Folanuel/Netflix-clone'
             target='_blank'
             rel='noreferrer'
           >
             <button className='px-8 py-2 mt-4 mr-8'>Code</button>
           </a>
           <a
-            href=''
+            href='https://notflix-clone.vercel.app/'
             target='_blank'
             rel='noreferrer'
           >
