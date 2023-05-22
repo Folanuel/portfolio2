@@ -6,6 +6,7 @@ import { BsFillPersonLinesFill } from 'react-icons/bs';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { HiOutlineChevronDoubleUp } from 'react-icons/hi';
 import ContactImg from '../public/assets/contact.jpg';
+import { motion } from "framer-motion";
 
 const Contact = () => {
   return (
@@ -133,12 +134,15 @@ const Contact = () => {
         <div className='flex justify-center py-12'>
           <Link href='/'>
             <a>
-              <div className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
+              <motion.div 
+              animate={{ scale: [1, 1.2, 1.2, 1] }}
+              transition={{ repeat: Infinity, duration: 2}}              
+              className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
                 <HiOutlineChevronDoubleUp
                   className='text-[#5651e5]'
                   size={30}
                 />
-              </div>
+              </motion.div>
             </a>
           </Link>
         </div>

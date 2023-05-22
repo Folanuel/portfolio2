@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
+import { motion } from "framer-motion";
 import { AiOutlineMail } from 'react-icons/ai';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
@@ -20,13 +21,18 @@ const Main = () => {
             I’m focused on building responsive front-end web applications
             integrating back-end technologies.
           </p>
-          <div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
+          <motion.div 
+          animate={{ scale: [1, 1.2, 1.2, 1] }}
+          transition={{ repeat: Infinity, duration: 2}}          
+          className='flex items-center justify-between max-w-[330px] m-auto py-4'>
             <a
               href='https://www.linkedin.com/in/folarin-adeniyi-1670a2162/'
               target='_blank'
               rel='noreferrer'
             >
-              <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
+              <div               
+              
+              className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer '>
                 <FaLinkedinIn />
               </div>
             </a>
@@ -35,12 +41,16 @@ const Main = () => {
               target='_blank'
               rel='noreferrer'
             >
-              <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
+              <div 
+                            
+              className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
                 <FaGithub />
               </div>
             </a>
             <Link href='/#contact'>
-              <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
+              <div 
+                          
+              className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
                 <AiOutlineMail />
               </div>
             </Link>
@@ -49,7 +59,7 @@ const Main = () => {
                 <BsFillPersonLinesFill />
               </div>
             </Link> */}
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>
